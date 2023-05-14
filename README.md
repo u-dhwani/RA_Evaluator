@@ -30,4 +30,4 @@ Nested Queries:
 Brackets have to be taken care of in Nested Queries.  
 CART [ SELECT{predicate}[TableA] , PROJECT{Attr1, Attr2, … }[UNION [TableB, TableC] ] ]  
 
-# Team Members : Dhwani Upadhyay (202211045) & Dhyani Patel (202211056) 
+### Team Members : Dhwani Upadhyay (202211045) & Dhyani Patel (202211056) 
