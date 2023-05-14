@@ -1,2 +1,31 @@
 # RA_Evaluator
-A Relational Algebra (RA) evaluator is a software component that processes and executes relational algebra queries. It analyzes queries, optimizes their execution, applies relational algebra operations on data, and generates result sets based on specified conditions, providing efficient retrieval of desired information from a relational database.
+A Relational Algebra (RA) evaluator is a software component that processes and executes relational algebra queries. It analyzes queries, applies relational algebra operations on data, and generates result sets based on specified conditions, providing efficient retrieval of desired information from a relational database.
+
+
+Relational Algebra Evaluator consists of six basic operations : 
+1. SELECT - The basic structure of SELECT query is
+            SELECT { Predicate } [ Table ]
+            Predicate has to be specified in Curly Brackets { } and Table has to be specified in Square Brackets [ ]. Whole query should be in Balanced                       Parenthesis form.
+            Sample query for SELECT operation:
+                SELECT { Age>20 && Sex!=’M’ } [ Student ]
+            
+2. PROJECT - PROJECT {Attr1, Attr2, Attr3, … } [ Table ]
+            {} should enclose the attributes and attributes should be separated by comma ‘,’.
+            Table should be provided in [ ]. Projection of attributes not existent in Table will 
+            result in error.
+            
+3. RENAME - RENAME {newTableName} [ Table ]
+            RENAME {newTableName | Attr1,Attr2,Attr3, … } [ Table ]
+            
+4. UNION -  UNION [ TableA , TableB ]
+            Tables should have exactly the same schema, i.e., names and datatypes of attributes and the order in which they are given should be the same,                     otherwise, it results in an error.
+            
+5. CARTESIAN PRODUCT - CART [ TableA , TableB ]
+                       TableA and TableB should have completely disjoint schemas. If a user wants to product two tables with same name of attributes, then he/she                        must rename atleast one table to make this condition satisfy.
+
+6. SET DIFFERENCE - SDIFF [TableA, TableB]
+
+Nested Queries:
+Brackets have to be taken care of in Nested Queries.
+CART [ SELECT{predicate}[TableA] , PROJECT{Attr1, Attr2, … }[UNION [TableB, TableC] ] ]
+
