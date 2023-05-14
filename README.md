@@ -1,6 +1,8 @@
 # RA_Evaluator
 A Relational Algebra (RA) evaluator is a software component that processes and executes relational algebra queries. It analyzes queries, applies relational algebra operations on data, and generates result sets based on specified conditions, providing efficient retrieval of desired information from a relational database.
 
+The Relational Algebra Evaluator can serve as an effective practice tool for students. It allows them to input relational algebra queries and receive immediate feedback on the correctness of their queries. The evaluator examines the syntax of the query and determines if it is valid or not. If the query is correct, the evaluator displays the expected output. On the other hand, if the query is incorrect, the evaluator provides a message that the query is incorrect. This interactive approach helps students improve their understanding of relational algebra and reinforces their query-writing skills.
+
 
 Relational Algebra Evaluator consists of six basic operations : 
 1. SELECT - The basic structure of SELECT query is
