@@ -934,7 +934,7 @@ public:
 			ve.push_back(cellValue);
 			i++;
 
-			std::cout<<std::endl;
+		//	std::cout<<std::endl;
 		}
 //		for(int i=0;i<ve.size();i++){
 //			for(int j=0;j<ve[i].size();j++)
@@ -942,7 +942,7 @@ public:
 //			cout<<endl;
 //		}
 		return ve;
-			std::cout<<std::endl;
+		//	std::cout<<std::endl;
 	}
 	
 		void showingData()
@@ -2621,7 +2621,7 @@ void loadData()
 }
 
 vector<string> admin_answer;
-
+int stop=0;
 int main()
 {
 
@@ -2683,10 +2683,11 @@ int main()
 					int i;
 					cin>>i;
 					std::cin.ignore();
-					if(i==0 || i==99){
+					if(i==0 || stop==100){
 						cout<<"Bye Exiting...."<<endl;
 						return 0;
 					}
+					stop++;
 					cout<<"\nEnter your query:";
 					string query;
 					getline(cin,query);
